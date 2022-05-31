@@ -1,0 +1,3 @@
+info@kaspersky.com;info@((kaspersky\.com)|(ecorp\.(us|com)));True
+info@kaspersky.com;info@((avast\.com)|(ecorp\.(eu|es)));False
+info@kaspersky.com;info@((avast\.com)|(ecorp\.(eu|es)));False
