@@ -35,7 +35,7 @@ histórico del objeto generado en el apartado 2 y escribir en cada línea la exp
 utilizada, el ejemplo para validar y el resultado, todo ello separado por ;
 Ejemplo:  [0-1];1;True"""
 import exrex,hashlib,re,os,argparse
-
+#                                           recordar que backspace en un string imprimiendo es \b
 print("\t\tEjercicio 1")
 correolandia = ".{1,10}@((protonmail\.com)|(ecorp\.(us|com)))"
 ej_correo = exrex.getone(correolandia)
@@ -83,7 +83,7 @@ class ValidarER:
         else:
             print("\n\tPatata quemada. No se ha encontrado 'ejemplar':\t"+ejemplar+"\ten las posibilidades de la ex regular 'textoER'")
             v_lista.append([ejemplar,str(self.textoER),"False"])
-        print("\n\n\t\tla lista v_lista es:\t"+str(v_lista))
+        print("\n\n\t\tla lista v_lista es:\t"+str(v_lista)+"\nPATATA123456789-10")
     def ImprimeER(self,textoER):
         print("\n\n\tAhora la ex regular es:\t"+self.textoER)
 probandoValidarER = ValidarER(textoER)
@@ -160,9 +160,9 @@ if args.Dump == "S" or args.Dump == 's':
                         file.write(b+"\n")   # está a propósito, para no imprimir el último ; al final de cada línea
             file.close()
         except:
-            print("\n\n\tAlgo ha fallado en escribir en el fichero....")
+            print("\n\n\tAlgo ha fallado en escribir en el fichero....")"""
 #  re.fullmatch(pattern, string, flags=0)
 #If the whole string matches the regular expression pattern, return a corresponding match object. Return None if the string does not match the pattern; note that this is different from a zero-length match.
-                """  #sencillamente, esta parte metida en string sin asignar a ninguna variable, no se puede usar sin otro archivo necesario. Adjuntado en Github igualmente
+                  #sencillamente, esta parte metida en string sin asignar a ninguna variable, no se puede usar sin otro archivo necesario. Adjuntado en Github igualmente
                      #just commented code, so it doesn't crash due to missing file. This file is uploaded to Github anyway if u want to make changes
 #               https://docs.python.org/3.9/library/re.html?highlight=re%20fullmatch#re.fullmatch
