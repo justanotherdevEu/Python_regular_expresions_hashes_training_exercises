@@ -1,4 +1,4 @@
-# Python_exrex_hashlib
+# Python_regular expressions and hashes, training exercises explained with code
                                                                     ENGLISH
 Just a few exercises about regular expresions and hashes (ciphers), with solution in Python code 💻
 
